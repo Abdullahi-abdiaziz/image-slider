@@ -77,3 +77,28 @@ p {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
+
+.slide {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  bottom: 1rem;
+  left: 45%;
+}
+
+span {
+  display: block;
+  height: .7rem;
+  width: .7rem;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  bottom: 1rem;
+}
+
+.active {
+  width: 1.2rem;
+  border-radius: 50px;
+  background-color: #ddd;
+}
