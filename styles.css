@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background: #000;
+}
+
+.image-slider {
+  min-height: 30em;
+  height: 100vh;
+  position: relative;
+  background-image: url(./images/chicago.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .3s;
+}
+
+.image-slider * {
+  box-sizing: border-box;
+}
+
+.caption {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    #000
+  );
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 4em 1em 2em 1em;
+  text-align: center;
+}
+
+.caption h1 {
+  margin: 0;
+  color: #fff;
+}
+
+p {
+  color: #8a8a8a;
+}
+
+.arrow-left,
+.arrow-right {
+  background: #fff;
+  position: absolute;
+  top: 45%;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  background: #000;
+  color: #fff;
+}
+
+.arrow-left {
+  left: 1em;
+}
+
+.arrow-right {
+  right: 1em;
+}
+
+.image-fade {
+  animation: imgFade .5s ease-in-out;
+}
+
+@keyframes imgFade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
